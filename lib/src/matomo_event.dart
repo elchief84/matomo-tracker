@@ -112,7 +112,7 @@ class MatomoEvent {
     final ecSh = shippingCost;
     final ecDt = discountAmount;
     final ua = tracker.userAgent;
-    final country = window.locale.countryCode;
+    final country = ''; // window.locale.countryCode?.toLowerCase();
     final dims = dimensions ?? {};
 
     return {
